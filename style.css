@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Roboto:wght@100;300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --softBlue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --bgBlue: hsl(217, 54%, 11%);
+  --cardBlue: hsl(216, 50%, 16%);
+  --shadowLine: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--bgBlue);
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  color: var(--white);
+  height: 100vh;
+  width: 100vw;
+}
+
+section.card {
+  background-color: var(--cardBlue);
+  padding: 20px 20px;
+  width: 350px;
+  height: 600px;
+  border-radius: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card_body--image-container {
+  width: 310px;
+  margin: 0 auto;
+}
+
+.card_body--image {
+  width: inherit;
+  border-radius: 1rem;
+}
+
+.card_body--title {
+  margin: 15px 0;
+  font-weight: 400;
+}
+
+.card_body--description {
+  color: var(--softBlue);
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+hr {
+  color: var(--softBlue);
+  background-color: var(--softBlue);
+  margin: 23px 0;
+  border-width: 0px;
+  height: 1px;
+  font-weight: 100;
+}
+
+.card_footer {
+  font-size: 0.9rem;
+  height: 7%;
+  font-weight: 300;
+  color: var(--softBlue);
+  vertical-align: middle;
+}
+
+strong {
+  font-weight: 400;
+  color: var(--white);
+}
+
+.card-footer {
+  margin-top: 10px;
+}
+
+.card_footer--avatar {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--white);
+  border-radius: 30px;
+}
+
+.card_footer--image {
+  display: inline-block;
+}
+
+.card_footer > * {
+  vertical-align: middle;
+}
+
+.card_footer > img:first-child {
+  margin-right: 10px;
+}
+
+.detail--value > * {
+  vertical-align: middle;
+}
+
+.detail--lifespan > * {
+  vertical-align: middle;
+}
+
+.detail--value {
+  display: inline-block;
+  color: var(--cyan);
+  font-weight: 600;
+}
+
+.detail--lifespan {
+  display: inline-block;
+  font-weight: 300;
+  color: var(--softBlue);
+  position: absolute;
+  right: 20px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Footer wording styles */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
