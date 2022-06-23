@@ -24,6 +24,15 @@ body {
   width: 100vw;
 }
 
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+a:hover {
+  color: var(--cyan);
+}
+
 section.card {
   background-color: var(--cardBlue);
   padding: 20px 20px;
@@ -38,12 +47,49 @@ section.card {
 
 .card_body--image-container {
   width: 310px;
+  height: 310px;
   margin: 0 auto;
 }
 
 .card_body--image {
   width: inherit;
   border-radius: 1rem;
+}
+
+span.image-overlay {
+  background-color: var(--cyan);
+  opacity: 0.5;
+  width: inherit;
+  height: inherit;
+  border-radius: 1rem;
+  display: none;
+  position: absolute;
+  top: 20px;
+  cursor: pointer;
+}
+
+span.image-overlay > img {
+  fill: white;
+}
+
+.card_body--image-container:hover span.image-overlay {
+  display: block;
+}
+
+div.center {
+  display: none;
+}
+
+.card_body--image-container:hover .center {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .card_body--title {
@@ -113,6 +159,10 @@ strong {
 .detail--value {
   display: inline-block;
   color: var(--cyan);
+  /* font-weight: 600; */
+}
+
+.detail--value--bold {
   font-weight: 600;
 }
 

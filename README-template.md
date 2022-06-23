@@ -40,8 +40,9 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
+- Semantic HTML5 markup with js
 - CSS3
+- dynamically loaded javascript
 
 ### What I learned
 
